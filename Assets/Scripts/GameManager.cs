@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    //Nesneler oluþturur.
+    //Nesneler oluÅŸturur.
     IEnumerator SpawnTarget()
     {
         while (isGameActive)
@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    //Skoru günceller.
+    //Skoru gÃ¼nceller.
     public void UpdateScore(int scoreToAdd)
     {
         score += scoreToAdd;
