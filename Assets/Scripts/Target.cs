@@ -22,10 +22,10 @@ public class Target : MonoBehaviour
         targetRb = GetComponent<Rigidbody>();
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
 
-        //Yukarı doğru random güçte hareket sağlar.
+        //YukarÄ± doÄŸru random gÃ¼Ã§te hareket saÄŸlar.
         targetRb.AddForce(RandomForce(), ForceMode.Impulse);
 
-        //Random yönlerde dönmelerini sağlar.
+        //Random yÃ¶nlerde dÃ¶nmelerini saÄŸlar.
         targetRb.AddTorque(RandomTorque(), RandomTorque(), RandomTorque(), ForceMode.Impulse);
 
         //Random konumlarda spawnlar.
@@ -37,7 +37,7 @@ public class Target : MonoBehaviour
 
     }
 
-    //Tıklanan nesneyi siler, skoru günceller ve efekt oluşturur.
+    //TÄ±klanan nesneyi siler, skoru gÃ¼nceller ve efekt oluÅŸturur.
     private void OnMouseDown()
     {
         if (gameManager.isGameActive)
@@ -48,7 +48,7 @@ public class Target : MonoBehaviour
         }    
     }
 
-    //Sensöre değdiğinde nesneyi siler.
+    //SensÃ¶re deÄŸdiÄŸinde nesneyi siler.
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
